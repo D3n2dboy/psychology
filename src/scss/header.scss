@@ -1,0 +1,177 @@
+//====================================================================================================
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	z-index: 10;
+	background-color: #fff;
+	transition: all 0.5s ease;
+	&._header-scroll {
+		box-shadow: 0 20px 30px 0 rgba(218, 192, 167, 0.5);
+	}
+	// .header__container
+
+	&__container {
+		display: flex;
+		width: 100%;
+		min-height: rem(90);
+		align-items: center;
+		gap: rem(25);
+	}
+
+	// .header__logo
+
+	&__logo {
+		flex: 0 0 rem(150);
+		padding-right: rem(5);
+	}
+
+	// .header__extra
+
+	&__extra {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .header__menu
+
+	&__menu {
+		flex: 1 0 auto;
+	}
+
+	// .header__actions
+
+	&__actions {
+		display: flex;
+		gap: rem(15);
+	}
+
+	// .header__socials
+
+	&__socials {
+	}
+}
+.menu {
+	// .menu__icon
+
+	&__icon {
+	}
+
+	// .menu__body
+
+	&__body {
+	}
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		column-gap: rem(30);
+	}
+
+	// .menu__item
+
+	&__item {
+		font-size: rem(20);
+	}
+
+	// .menu__link
+
+	&__link {
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #cda37b;
+			}
+		}
+	}
+}
+.socials-link {
+	display: flex;
+	align-self: center;
+	gap: rem(15);
+	// .socials-link__item
+
+	&__item {
+	}
+
+	// .socials-link__link
+
+	&__link {
+		display: inline-block;
+		max-width: rem(32);
+
+		@media (any-hover: hover) {
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+		img {
+			transition: transform 0.3s ease;
+			max-width: 100%;
+		}
+	}
+}
+.button {
+}
+.header-callback {
+}

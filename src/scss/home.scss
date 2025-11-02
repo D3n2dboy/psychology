@@ -1,0 +1,259 @@
+//====================================================================================================
+.hero {
+	position: relative;
+
+	&:not(:last-child) {
+		margin-bottom: rem(100);
+	}
+
+	// .hero__title
+
+	&__title {
+		font-size: rem(80);
+		line-height: 1.4;
+		text-transform: uppercase;
+	}
+
+	// .hero__sub-title
+	.hero__sub-title {
+		font-size: rem(48);
+		line-height: 1.4;
+	}
+
+	// .hero__video-container
+
+	&__video-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@extend %responsiveVideo;
+	}
+
+	/// hero__video
+	&__video {
+		max-height: 100dvh;
+		object-fit: cover;
+	}
+
+	// .hero__effect
+
+	&__effect {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100dvh;
+		background-color: rgba(44, 44, 44, 0.6);
+	}
+
+	// .hero__container
+
+	&__container {
+	}
+
+	.hero__body {
+		display: flex;
+		position: relative;
+		z-index: 2;
+		color: #fff;
+		gap: rem(120);
+		min-width: 100%;
+		min-height: 100vh;
+		padding-bottom: rem(35);
+	}
+
+	// .hero__left
+
+	&__left {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		flex: 1 0 560px;
+		padding-right: rem(120);
+		padding: rem(120) 0 rem(50);
+
+		.title {
+			&:not(:last-child) {
+				margin-bottom: rem(50);
+			}
+		}
+
+		.sub-title {
+			&:not(:last-child) {
+				margin-bottom: rem(50);
+			}
+		}
+	}
+
+	// .hero__right
+
+	&__right {
+		//width: 50%;
+		max-width: rem(662);
+		align-self: flex-end;
+		//padding-bottom: rem(50);
+		font-size: rem(20);
+
+		//background-color: blue;
+	}
+
+	// .hero__text
+
+	&__text {
+		text-align: right;
+		line-height: 1.4;
+	}
+
+	// .hero__arrow
+
+	&__arrow {
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		transform: translateX(50%);
+		padding: rem(20);
+		background-color: goldenrod;
+		border-radius: 50%;
+	}
+}
+
+//====================================================================================================
+
+.specialists {
+	&:not(:last-child) {
+		margin-bottom: rem(100);
+	}
+}
+//====================================================================================================
+
+.shop-wiget {
+	&:not(:last-child) {
+		margin-bottom: rem(100);
+	}
+	// .shop-wiget__container
+
+	&__container {
+	}
+
+	// .shop-wiget__body
+
+	&__body {
+		background-color: #fff;
+		padding: rem(50) rem(20);
+		border-radius: rem(30);
+	}
+
+	// .shop-wiget__slider
+
+	&__slider {
+		//margin: 0 0 0 rem(-20);
+	}
+
+	// .shop-wiget__wrapper
+
+	&__wrapper {
+		//padding: 0 rem(20) 0 rem(20);
+	}
+
+	// .shop-wiget__items
+
+	&__items {
+	}
+
+	// .shop-wiget__slide
+
+	&__slide {
+		.card__body {
+			border: 1px solid red;
+		}
+
+		.card__img {
+			img {
+				padding: 0;
+			}
+			//padding: 0;
+		}
+	}
+}
+
+//====================================================================================================
+
+.socials {
+	margin-bottom: rem(100);
+
+	// .socials__container
+
+	&__container {
+	}
+
+	// .socials__body
+
+	&__body {
+	}
+
+	// .socials__items
+
+	&__items {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	// .socials__item
+
+	&__item {
+		position: relative;
+		flex: 0 0 20%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__link-body {
+	}
+
+	// .socials__link
+
+	&__link {
+		position: relative;
+		padding-top: 100%;
+		width: 100%;
+		background-color: rgb(255, 255, 255);
+		border-radius: 50%;
+		box-shadow: 0 12px 20px 0 rgba(177, 155, 133, 0.3);
+		transition: box-shadow 0.5s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				box-shadow: 0 20px 30px 0 rgba(218, 192, 167, 0.5);
+			}
+		}
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.circle {
+}
+
+.circle p {
+}
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================

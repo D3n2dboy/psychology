@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="hero">
+				<div class="hero__effect"></div>
+				<div class="hero__video-container">
+					<video class="hero__video" src="@img/video/01.mp4" autoplay muted loop></video>
+				</div>
+				<!-- <img class="hero__image" src="@img/hero/01.jpg" alt="heero__image"> -->
+				<div class="hero__container">
+					<div class="hero__body">
+
+
+						<div class="hero__left">
+							<h1 class="title hero__title">
+								Пространство
+								для открытия
+							</h1>
+							<p class="sub-title hero__sub-title">
+								Команда лучших
+								психологов на расстоянии
+								одного клика от вас!
+							</p>
+							<div>
+								<a href="#" class="button">записаться на консультацию</a>
+							</div>
+						</div>
+						<div class="hero__right">
+							<div class="hero__text">
+								<p>Мы позаботились о том, чтобы высокопрофессиональная психологическая поддержка стала
+									доступной, быстрой и удобной. Вместе
+									с «Ответ» вы можете с легкостью подобрать специалиста себе по душе и получить
+									индивидуальную оnline-консультацию из
+									любой точки мира или прийти на личную встречу в Москве и Санкт-Петербурге.</p>
+							</div>
+						</div>
+						<!-- <div class="hero__arrow _icon-arrow-down"></div> -->
+
+					</div>
+				</div>
+			</section>
+
+
+			<section class="specialists">
+				<div class="specialists__container">
+
+					<div class="section__header">
+						<h2 class="title">
+							Наши специалисты
+						</h2>
+						<p class="sub-title">
+							Лучший подарок для каждого — найти свой Ответ. В витрине нашего магазина — все, что может в
+							этом помочь: сертификаты на
+							сессии с психологами, образовательные курсы и красивые вещи со смыслом, которые приятно
+							подарить близким.
+						</p>
+					</div>
+
+					<!-- Оболочка слайдера -->
+					<div class="product-card__slider swiper">
+
+						<div class="swiper-button__body">
+							<button type="button"
+								class="swiper-button-prev swiper-button swiper-button__left _icon-arrow-left"></button>
+							<button type="button"
+								class="swiper-button-next swiper-button swiper-button__right _icon-arrow-right"></button>
+						</div>
+						<!-- Двигающееся часть слайдера -->
+						<div class="product-card__wrapper swiper-wrapper product-cards">
+							<!-- Слайд -->
+							<div class="product-card__slide swiper-slide">
+								<div class="product-card">
+									<div class="product-card-wrapper product-card__wrapper">
+										<div class="product-image-wrapper product-card__image-wrapper">
+											<div class="product-image product-card__image">
+												<img src="@img/specialists/01.png" alt="">
+											</div>
+										</div>
+										<div class="product-content-wprapper product-card__content-wrapper">
+											<div class="product-content product-card__content">
+												<h3 class="product-card__title">Татьяна Данилова</h3>
+												<p class="product-card__position">Психолог</p>
+												<p class="product-card__sub-title">Получите готовые медитации,
+													направленные на то, чтобы восстановить внутреннее равновесие, найти
+													ответы на ваши вопросы,
+													войти
+													в ресурсное состояние и наполниться энергией.
+												</p>
+												<button class="button product-card__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайд -->
+							<div class="product-card__slide swiper-slide">
+								<div class="product-card">
+									<div class="product-card-wrapper product-card__wrapper">
+										<div class="product-image-wrapper product-card__image-wrapper">
+											<div class="product-image product-card__image">
+												<img src="@img/specialists/01.png" alt="">
+											</div>
+										</div>
+										<div class="product-content-wprapper product-card__content-wrapper">
+											<div class="product-content product-card__content">
+												<h3 class="product-card__title">Татьяна Данилова</h3>
+												<p class="product-card__position">Психолог</p>
+												<p class="product-card__sub-title">Получите готовые медитации,
+													направленные на то, чтобы восстановить внутреннее равновесие, найти
+													ответы на ваши вопросы,
+													войти
+													в ресурсное состояние и наполниться энергией.
+												</p>
+												<button class="button product-card__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайд -->
+							<div class="product-card__slide swiper-slide">
+								<div class="product-card">
+									<div class="product-card-wrapper product-card__wrapper">
+										<div class="product-image-wrapper product-card__image-wrapper">
+											<div class="product-image product-card__image">
+												<img src="@img/specialists/01.png" alt="">
+											</div>
+										</div>
+										<div class="product-content-wprapper product-card__content-wrapper">
+											<div class="product-content product-card__content">
+												<h3 class="product-card__title">Татьяна Данилова</h3>
+												<p class="product-card__position">Психолог</p>
+												<p class="product-card__sub-title">Получите готовые медитации,
+													направленные на то, чтобы восстановить внутреннее равновесие, найти
+													ответы на ваши вопросы,
+													войти
+													в ресурсное состояние и наполниться энергией.
+												</p>
+												<button class="button product-card__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайд -->
+							<div class="product-card__slide swiper-slide">
+								<div class="product-card">
+									<div class="product-card-wrapper product-card__wrapper">
+										<div class="product-image-wrapper product-card__image-wrapper">
+											<div class="product-image product-card__image">
+												<img src="@img/specialists/01.png" alt="">
+											</div>
+										</div>
+										<div class="product-content-wprapper product-card__content-wrapper">
+											<div class="product-content product-card__content">
+												<h3 class="product-card__title">Татьяна Данилова</h3>
+												<p class="product-card__position">Психолог</p>
+												<p class="product-card__sub-title">Получите готовые медитации,
+													направленные на то, чтобы восстановить внутреннее равновесие, найти
+													ответы на ваши вопросы,
+													войти
+													в ресурсное состояние и наполниться энергией.
+												</p>
+												<button class="button product-card__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Слайд -->
+							<div class="product-card__slide swiper-slide">
+								<div class="product-card">
+									<div class="product-card-wrapper product-card__wrapper">
+										<div class="product-image-wrapper product-card__image-wrapper">
+											<div class="product-image product-card__image">
+												<img src="@img/specialists/01.png" alt="">
+											</div>
+										</div>
+										<div class="product-content-wprapper product-card__content-wrapper">
+											<div class="product-content product-card__content">
+												<h3 class="product-card__title">Татьяна Данилова</h3>
+												<p class="product-card__position">Психолог</p>
+												<p class="product-card__sub-title">Получите готовые медитации,
+													направленные на то, чтобы восстановить внутреннее равновесие, найти
+													ответы на ваши вопросы,
+													войти
+													в ресурсное состояние и наполниться энергией.
+												</p>
+												<button class="button product-card__button">В корзину</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+						<!-- Если нужен скролбар -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="shop-wiget">
+				<div class="shop-wiget__container">
+
+					<div class="shop-wiget__body">
+						<div class="section__header">
+							<h2 class="title">
+								Магазин
+							</h2>
+							<p class="sub-title">
+								Найти психолога или психотерапевта несложно. Проблемы появляются позже, когда становится
+								ясно, что человек не
+								соответствует вашим ожиданиям, нарушает границы, дает советы или позволяет себе
+								оценочные
+								суждения к вам или вашей
+								ситуации.
+							</p>
+						</div>
+
+						<!-- Оболочка слайдера -->
+						<div class="shop-wiget__slider swiper">
+							<div class="swiper-button__body">
+								<button type="button"
+									class="swiper-button-prev swiper-button swiper-button__left _icon-arrow-left"></button>
+								<button type="button"
+									class="swiper-button-next swiper-button swiper-button__right _icon-arrow-right"></button>
+							</div>
+							<!-- Двигающееся часть слайдера -->
+							<div class="shop-wiget__wrapper swiper-wrapper shop-wiget__items product-cards">
+								<!-- Слайд -->
+								<div class="product-card__slide swiper-slide">
+									<div class="product-card">
+										<div class="product-card-wrapper product-card__wrapper">
+											<div class="product-image-wrapper product-card__image-wrapper">
+												<div class="product-image product-card__image">
+													<img src="@img/products/01.png" alt="">
+												</div>
+											</div>
+											<div class="product-content-wprapper product-card__content-wrapper">
+												<div class="product-content product-card__content">
+													<h3 class="product-card__label">Название товара</h3>
+													<div class="product-card__price">1750 Р</div>
+													<button class="button product-card__button">В корзину</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-card__slide swiper-slide">
+									<div class="product-card">
+										<div class="product-card-wrapper product-card__wrapper">
+											<div class="product-image-wrapper product-card__image-wrapper">
+												<div class="product-image product-card__image">
+													<img src="@img/products/01.png" alt="">
+												</div>
+											</div>
+											<div class="product-content-wprapper product-card__content-wrapper">
+												<div class="product-content product-card__content">
+													<h3 class="product-card__label">Название товара</h3>
+													<div class="product-card__price">1750 Р</div>
+													<button class="button product-card__button">В корзину</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-card__slide swiper-slide">
+									<div class="product-card">
+										<div class="product-card-wrapper product-card__wrapper">
+											<div class="product-image-wrapper product-card__image-wrapper">
+												<div class="product-image product-card__image">
+													<img src="@img/products/01.png" alt="">
+												</div>
+											</div>
+											<div class="product-content-wprapper product-card__content-wrapper">
+												<div class="product-content product-card__content">
+													<h3 class="product-card__label">Название товара</h3>
+													<div class="product-card__price">1750 Р</div>
+													<button class="button product-card__button">В корзину</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-card__slide swiper-slide">
+									<div class="product-card">
+										<div class="product-card-wrapper product-card__wrapper">
+											<div class="product-image-wrapper product-card__image-wrapper">
+												<div class="product-image product-card__image">
+													<img src="@img/products/01.png" alt="">
+												</div>
+											</div>
+											<div class="product-content-wprapper product-card__content-wrapper">
+												<div class="product-content product-card__content">
+													<h3 class="product-card__label">Название товара</h3>
+													<div class="product-card__price">1750 Р</div>
+													<button class="button product-card__button">В корзину</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Слайд -->
+								<div class="product-card__slide swiper-slide">
+									<div class="product-card">
+										<div class="product-card-wrapper product-card__wrapper">
+											<div class="product-image-wrapper product-card__image-wrapper">
+												<div class="product-image product-card__image">
+													<img src="@img/products/01.png" alt="">
+												</div>
+											</div>
+											<div class="product-content-wprapper product-card__content-wrapper">
+												<div class="product-content product-card__content">
+													<h3 class="product-card__label">Название товара</h3>
+													<div class="product-card__price">1750 Р</div>
+													<button class="button product-card__button">В корзину</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- Если нужна пагинация -->
+							<div class="swiper-pagination"></div>
+
+							<!-- Если нужен скролбар -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+
+			<section class="socials">
+				<div class="socials__container">
+					<div class="section__header">
+						<h2 class="title">
+							МЫ в соц сетях
+						</h2>
+						<p class="sub-title">
+							наши страницы
+						</p>
+					</div>
+
+					<div class="socials__body">
+						<div class="socials__items">
+							<div class="socials__item">
+								<div class="socials__link">
+									<a href="#" class="link-body">
+										<img src="@img/socials/01.png" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="socials__item">
+								<div class="socials__link">
+									<a href="#" class="link-body">
+										<img src="@img/socials/02.png" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="socials__item">
+								<div class="socials__link">
+									<a href="#" class="link-body">
+										<img src="@img/socials/03.png" alt="">
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

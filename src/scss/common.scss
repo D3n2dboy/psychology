@@ -1,0 +1,311 @@
+// Заголовки, общие БЄМ блоки и проче...
+.section__header {
+	text-align: center;
+	margin: 0 auto;
+	max-width: rem(675);
+	&:not(:last-child) {
+		margin-bottom: rem(45);
+	}
+}
+
+.title {
+	font-size: rem(44);
+	line-height: 1.4;
+	text-transform: uppercase;
+	&:not(:last-child) {
+		margin-bottom: rem(25);
+	}
+}
+
+.sub-title {
+	line-height: 1.4;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: rem(20);
+
+	background-color: #ffffff; /* Белый фон */
+	border-radius: 15px; /* Скругление углов */
+	padding: 30px; /* Внутренние отступы */
+	width: 300px; /* Фиксированная или адаптивная ширина */
+	text-align: center; /* Выравнивание текста по центру */
+
+	/* Тень, создающая эффект "поднятия" */
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+		/* Мягкая тень */ 0 0 0 10px rgba(255, 255, 255, 0.5) inset; /* Внутренняя светлая обводка (опционально, для легкого 3D эффекта) */
+
+	/* Дополнительная обводка (как видно на фоне) */
+	border: 1px solid rgba(0, 0, 0, 0.05); /* Очень легкая внешняя обводка */
+
+	//border: 2px solid red;
+	// .card__img
+
+	&__img {
+		width: 280px; /* Размер круга */
+		height: 280px;
+		margin: -140px auto 20px auto; /* Сдвиг вверх: отрицательный margin-top */
+		border-radius: 50%; /* Делает контейнер круглым */
+		overflow: hidden; /* Обрезает изображение по форме круга */
+
+		/* Светлая обводка вокруг круга (как на макете) */
+		box-shadow: 0 0 0 10px white,
+			/* Белый круглый ободок */ 0 0 0 12px rgba(0, 0, 0, 0.1); /* Тонкая тень/рамка вокруг ободка */
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* Чтобы изображение полностью заполнило круг без искажений */
+			display: block;
+		}
+	}
+
+	// .card__body
+
+	&__body {
+		margin: -100px auto 20px auto; /* Сдвиг вверх: отрицательный margin-top */
+		padding: rem(20);
+		padding-bottom: rem(40);
+		padding-top: rem(100);
+		//box-shadow: 0 3px 18px 3px rgba(165, 133, 102, 0.12);
+		//background: #fff;
+		border-radius: rem(30);
+	}
+
+	// .card__title
+
+	&__title {
+		font-size: rem(30);
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+	}
+
+	// .card__sub-title
+
+	&__sub-title {
+		font-size: rem(20);
+
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	// .card__text
+
+	&__text {
+		line-height: 1.4;
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	// .card__button
+
+	&__button {
+	}
+}
+
+// .swiper-button
+.swiper-button {
+	width: 50px;
+	height: 50px;
+	//padding: rem(20);
+	border-radius: 50%;
+	background-color: #e0c6ad;
+
+	// .swiper-button__body
+
+	&__body {
+		position: relative;
+		display: flex;
+		gap: rem(15);
+		justify-content: flex-end;
+		color: #fff;
+
+		&:not(:last-child) {
+			margin-bottom: rem(15);
+		}
+	}
+
+	// .swiper-button__left
+	&__left {
+		&::before {
+			margin-left: rem(-2);
+		}
+	}
+
+	// .swiper-button__right
+	&__right {
+		&::before {
+			margin-left: rem(2);
+		}
+	}
+}
+
+.card-container {
+	display: flex; /* Или grid-template-columns: repeat(3, 1fr); для Grid */
+	gap: 20px; /* Расстояние между карточками */
+	justify-content: center; /* Выравнивание по центру */
+}
+
+.image-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Чтобы изображение полностью заполнило круг без искажений */
+	display: block;
+}
+
+.product-card {
+	width: 100%;
+	// .product-card__wrapper
+
+	&__wrapper {
+	}
+
+	// .product-card__image-wrapper
+
+	&__image-wrapper {
+		position: relative;
+		transform: translateY(-30%);
+		padding: 0 20%;
+	}
+
+	// .product-card__image
+
+	&__image {
+		position: relative;
+		padding-bottom: 100%;
+
+		/* background-color: rosybrown; */
+
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			border-radius: 50%;
+			z-index: 3;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 1%;
+			left: 1%;
+			width: 98%;
+			height: 98%;
+			border-radius: 50%;
+			z-index: 2;
+			border: 1px solid #e0c6ad;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: -2.5%;
+			left: -2.5%;
+			width: 105%;
+			height: 105%;
+			background-color: #fff;
+			border-radius: 50%;
+
+			.shop-wiget__slider & {
+				background-color: #fbf5f1;
+				border: 1px solid #fff;
+			}
+		}
+
+		.shop-wiget__slider & {
+			border: 0;
+		}
+	}
+
+	// .product-card__content-wrapper
+
+	&__content-wrapper {
+		background-color: rgb(255, 255, 255);
+		margin-top: -40%;
+		padding-top: 20%;
+		border-radius: 30px;
+
+		.shop-wiget__slider & {
+			//border: 1px solid #e0c6ad;
+			background-color: #fbf5f1;
+		}
+	}
+
+	// .product-card__content
+
+	&__content {
+		padding: 20px;
+
+		.shop-wiget__slider & {
+			text-align: center;
+		}
+	}
+
+	// .product-card__title
+
+	&__title {
+		font-size: 32px;
+		line-height: 140%;
+		color: #3d3935;
+	}
+
+	// .product-card__label
+
+	&__label {
+		font-size: rem(20);
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	// .product-card__price
+
+	&__price {
+		font-weight: 700;
+
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	// .product-card__button
+
+	&__button {
+	}
+
+	// .product-card__position
+
+	&__position {
+		font-size: 20px;
+		line-height: 140%;
+		color: #3d3935;
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	// .product-card__sub-title
+
+	&__sub-title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 140%;
+		color: #3d3935;
+
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+}
+
+.product-cards {
+	display: flex;
+	padding-top: 5%;
+}
