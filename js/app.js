@@ -5797,9 +5797,36 @@
                     slidesPerView: 3.8,
                     spaceBetween: 30,
                     speed: 800,
+                    preloadImages: false,
+                    lazy: true,
                     navigation: {
                         prevEl: ".swiper-button-prev",
                         nextEl: ".swiper-button-next"
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1.2,
+                            spaceBetween: 0,
+                            autoHeight: true,
+                            spaceBetween: 10
+                        },
+                        480: {
+                            slidesPerView: 2.2,
+                            spaceBetween: 0,
+                            spaceBetween: 20
+                        },
+                        768: {
+                            slidesPerView: 2.2,
+                            spaceBetween: 20
+                        },
+                        992: {
+                            slidesPerView: 3.2,
+                            spaceBetween: 20
+                        },
+                        1268: {
+                            slidesPerView: 3.8,
+                            spaceBetween: 30
+                        }
                     },
                     on: {}
                 });
@@ -5814,6 +5841,31 @@
                     navigation: {
                         prevEl: ".swiper-button-prev",
                         nextEl: ".swiper-button-next"
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1.2,
+                            spaceBetween: 0,
+                            autoHeight: true,
+                            spaceBetween: 10
+                        },
+                        480: {
+                            slidesPerView: 2.2,
+                            spaceBetween: 0,
+                            spaceBetween: 20
+                        },
+                        768: {
+                            slidesPerView: 2.2,
+                            spaceBetween: 20
+                        },
+                        992: {
+                            slidesPerView: 3.2,
+                            spaceBetween: 20
+                        },
+                        1268: {
+                            slidesPerView: 4.2,
+                            spaceBetween: 30
+                        }
                     },
                     on: {}
                 });

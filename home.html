@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20251104202935">
+	<link rel="stylesheet" href="css/style.min.css?_v=20251105234134">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,6 @@
 				</a>
 				<div class="header__extra">
 					<div class="header__menu menu">
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item"><a href="specialists.html" class="menu__link">Cпециалисты</a></li>
@@ -47,7 +46,9 @@
 								</a>
 							</li>
 						</ul>
-						<a href="#" data-popup="#popup" class="button header-callback">подобрать психолога</a>
+						<a href="#" data-popup="#popup" class="button header-callback">подобрать <span>психолога</span></a>
+
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
 					</div>
 				</div>
 			</div>
@@ -57,7 +58,9 @@
 			<section class="hero">
 				<div class="hero__effect"></div>
 				<div class="hero__video-container">
-					<video class="hero__video" src="img/video/03.MP4" autoplay muted loop></video>
+					<video class="hero__video" autoplay playsinline muted loop>
+						<source src="img/video/03.MP4" type="video/mp4">
+					</video>
 				</div>
 				<div class="hero__container">
 					<div class="hero__body">
@@ -71,11 +74,14 @@
 								психологов на расстоянии
 								одного клика от вас!
 							</p>
-							<div>
-								<a href="#" class="button">записаться на консультацию</a> <a href="certificats.html" class="button" style="background-color: rgba(255, 0, 0, 0); color: #fff;">сертификаты</a>
-							</div>
+
 						</div>
-						<div class="hero__right">
+						<div class="hero__footer">
+							<div class="hero__buttons">
+								<a href="#" class="button">записаться на консультацию</a>
+								<a href="certificats.html" class="button button_no-bg">сертификаты</a>
+							</div>
+
 							<div class="hero__text">
 								<p>Мы позаботились о том, чтобы высокопрофессиональная психологическая поддержка стала
 									доступной, быстрой и удобной. Вместе
@@ -126,11 +132,12 @@
 									</div>
 									<div class="specialists-item-front__text">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
-										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia
+										quibusdam,
 										sunt, iste exercitationem minima praesentium culpa officia?
 									</div>
 								</a>
-								<a href="#" class="button specialists-item-front__button">
+								<a href="#" class="button _fw specialists-item-front__button">
 									Записаться
 								</a>
 
@@ -155,7 +162,7 @@
 										sunt, iste exercitationem minima praesentium culpa officia?
 									</div>
 								</a>
-								<a href="#" class="button specialists-item-front__button">
+								<a href="#" class="button _fw specialists-item-front__button">
 									Записаться
 								</a>
 
@@ -180,7 +187,7 @@
 										sunt, iste exercitationem minima praesentium culpa officia?
 									</div>
 								</a>
-								<a href="#" class="button specialists-item-front__button">
+								<a href="#" class="button _fw specialists-item-front__button">
 									Записаться
 								</a>
 							</div>
@@ -204,7 +211,7 @@
 										sunt, iste exercitationem minima praesentium culpa officia?
 									</div>
 								</a>
-								<a href="#" class="button specialists-item-front__button">
+								<a href="#" class="button _fw specialists-item-front__button">
 									Записаться
 								</a>
 							</div>
@@ -228,32 +235,7 @@
 										sunt, iste exercitationem minima praesentium culpa officia?
 									</div>
 								</a>
-								<a href="#" class="button specialists-item-front__button">
-									Записаться
-								</a>
-
-							</div>
-
-							<!-- Слайд -->
-							<div class="specialists__slide swiper-slide specialists-item-front">
-								<a href="#" class="specialists-item-front__body">
-									<div class="specialists-item-front__image-ibg">
-										<img data-src="img/specialists/01.jpg" alt="">
-									</div>
-
-									<div class="specialists-item-front__title">
-										Имя Фамилия
-									</div>
-									<div class="specialists-item-front__sub-title">
-										Психолог
-									</div>
-									<div class="specialists-item-front__text">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
-										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
-										sunt, iste exercitationem minima praesentium culpa officia?
-									</div>
-								</a>
-								<a href="#" class="button specialists-item-front__button">
+								<a href="#" class="button _fw specialists-item-front__button">
 									Записаться
 								</a>
 
@@ -278,7 +260,32 @@
 										sunt, iste exercitationem minima praesentium culpa officia?
 									</div>
 								</a>
-								<a href="#" class="button specialists-item-front__button">
+								<a href="#" class="button _fw specialists-item-front__button">
+									Записаться
+								</a>
+
+							</div>
+
+							<!-- Слайд -->
+							<div class="specialists__slide swiper-slide specialists-item-front">
+								<a href="#" class="specialists-item-front__body">
+									<div class="specialists-item-front__image-ibg">
+										<img data-src="img/specialists/01.jpg" alt="">
+									</div>
+
+									<div class="specialists-item-front__title">
+										Имя Фамилия
+									</div>
+									<div class="specialists-item-front__sub-title">
+										Психолог
+									</div>
+									<div class="specialists-item-front__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
+										sunt, iste exercitationem minima praesentium culpa officia?
+									</div>
+								</a>
+								<a href="#" class="button _fw specialists-item-front__button">
 									Записаться
 								</a>
 							</div>
@@ -563,7 +570,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20251104202935"></script>
+	<script src="js/app.min.js?_v=20251105234134"></script>
 </body>
 
 </html>
