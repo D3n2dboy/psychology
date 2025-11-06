@@ -1,4 +1,70 @@
 // Заголовки, общие БЄМ блоки и проче...
+.page {
+	margin-top: 90px;
+	// .page__container
+
+	&__container {
+		//padding: rem(30) rem(20);
+		padding-top: rem(30);
+		padding-bottom: rem(30);
+	}
+
+	// .page__breadcrumbs
+
+	&__breadcrumbs {
+		&:not(:last-child) {
+			margin-bottom: rem(25);
+		}
+
+		span {
+			&:last-child {
+				font-weight: 700;
+				//color: red;
+			}
+		}
+	}
+
+	// .page__content
+
+	&__content {
+	}
+
+	// .page__header
+
+	&__header {
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+		}
+	}
+
+	// .page__title
+
+	&__title {
+		font-size: rem(35);
+
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+		}
+	}
+
+	// .page__description
+
+	&__description {
+		max-width: rem(800);
+		line-height: 1.4;
+		font-size: rem(20);
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+		}
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: rem(10);
+			}
+		}
+	}
+}
+
 .section__header {
 	text-align: center;
 	margin: 0 auto;
@@ -9,7 +75,7 @@
 }
 
 .title {
-	font-size: rem(44);
+	@include adaptiveValue("font-size", 45, 35);
 	line-height: 1.4;
 	text-transform: uppercase;
 	&:not(:last-child) {
@@ -112,8 +178,9 @@
 	width: 50px;
 	height: 50px;
 	//padding: rem(20);
-	border-radius: 50%;
-	background-color: #e0c6ad;
+	border: 3px solid #e0c6ad;
+	border-radius: rem(15);
+	background-color: #ffe9d4;
 
 	// .swiper-button__body
 
@@ -122,10 +189,14 @@
 		display: flex;
 		gap: rem(15);
 		justify-content: flex-end;
-		color: #fff;
+		color: #000;
 
 		&:not(:last-child) {
 			margin-bottom: rem(15);
+		}
+
+		.shop-wiget__slider & {
+			margin-bottom: rem(70);
 		}
 	}
 
@@ -170,6 +241,10 @@
 		position: relative;
 		transform: translateY(-30%);
 		padding: 0 20%;
+
+		@media (max-width: $mobile) {
+			padding: 0 10%;
+		}
 	}
 
 	// .product-card__image

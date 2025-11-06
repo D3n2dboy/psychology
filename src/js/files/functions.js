@@ -240,10 +240,17 @@ export function spollers() {
 				const spollersBlock = spollerTitle.closest('[data-spollers]');
 				const oneSpoller = spollersBlock.hasAttribute('data-one-spoller');
 				const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
+
+				const itemSpoller = spollerTitle.parentNode;
+
+				console.log(itemSpoller);
 				if (!spollersBlock.querySelectorAll('._slide').length) {
 					if (oneSpoller && !spollerTitle.classList.contains('_spoller-active')) {
 						hideSpollersBody(spollersBlock);
 					}
+
+					itemSpoller.classList.toggle('_spoller-active-item');
+
 					spollerTitle.classList.toggle('_spoller-active');
 					_slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
 				}

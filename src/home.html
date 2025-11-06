@@ -12,13 +12,12 @@
 			<section class="hero">
 				<div class="hero__effect"></div>
 				<div class="hero__video-container">
-					<video class="hero__video" src="@img/video/01.mp4" autoplay muted loop></video>
+					<video class="hero__video" autoplay playsinline muted loop>
+						<source src="@img/video/03.MP4" type="video/mp4">
+					</video>
 				</div>
-				<!-- <img class="hero__image" src="@img/hero/01.jpg" alt="heero__image"> -->
 				<div class="hero__container">
 					<div class="hero__body">
-
-
 						<div class="hero__left">
 							<h1 class="title hero__title">
 								Пространство
@@ -29,11 +28,14 @@
 								психологов на расстоянии
 								одного клика от вас!
 							</p>
-							<div>
-								<a href="#" class="button">записаться на консультацию</a>
-							</div>
+
 						</div>
-						<div class="hero__right">
+						<div class="hero__footer">
+							<div class="hero__buttons">
+								<a href="#" class="button">записаться на консультацию</a>
+								<a href="certificats.html" class="button button_no-bg">сертификаты</a>
+							</div>
+
 							<div class="hero__text">
 								<p>Мы позаботились о том, чтобы высокопрофессиональная психологическая поддержка стала
 									доступной, быстрой и удобной. Вместе
@@ -42,12 +44,9 @@
 									любой точки мира или прийти на личную встречу в Москве и Санкт-Петербурге.</p>
 							</div>
 						</div>
-						<!-- <div class="hero__arrow _icon-arrow-down"></div> -->
-
 					</div>
 				</div>
 			</section>
-
 
 			<section class="specialists">
 				<div class="specialists__container">
@@ -65,8 +64,7 @@
 					</div>
 
 					<!-- Оболочка слайдера -->
-					<div class="product-card__slider swiper">
-
+					<div class="specialists__slider swiper">
 						<div class="swiper-button__body">
 							<button type="button"
 								class="swiper-button-prev swiper-button swiper-button__left _icon-arrow-left"></button>
@@ -74,143 +72,181 @@
 								class="swiper-button-next swiper-button swiper-button__right _icon-arrow-right"></button>
 						</div>
 						<!-- Двигающееся часть слайдера -->
-						<div class="product-card__wrapper swiper-wrapper product-cards">
+						<div class="specialists__wrapper swiper-wrapper">
 							<!-- Слайд -->
-							<div class="product-card__slide swiper-slide">
-								<div class="product-card">
-									<div class="product-card-wrapper product-card__wrapper">
-										<div class="product-image-wrapper product-card__image-wrapper">
-											<div class="product-image product-card__image">
-												<img src="@img/specialists/01.png" alt="">
-											</div>
-										</div>
-										<div class="product-content-wprapper product-card__content-wrapper">
-											<div class="product-content product-card__content">
-												<h3 class="product-card__title">Татьяна Данилова</h3>
-												<p class="product-card__position">Психолог</p>
-												<p class="product-card__sub-title">Получите готовые медитации,
-													направленные на то, чтобы восстановить внутреннее равновесие, найти
-													ответы на ваши вопросы,
-													войти
-													в ресурсное состояние и наполниться энергией.
-												</p>
-												<button class="button product-card__button">В корзину</button>
-											</div>
-										</div>
+							<div class="specialists__slide swiper-slide specialists-item-front">
+								<a href="specialist-one.html" class="specialists-item-front__body">
+									<div class="specialists-item-front__image-ibg">
+										<img data-src="@img/specialists/01.jpg" alt="">
 									</div>
-								</div>
+
+									<div class="specialists-item-front__title">
+										Имя Фамилия
+									</div>
+									<div class="specialists-item-front__sub-title">
+										Психолог
+									</div>
+									<div class="specialists-item-front__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia
+										quibusdam,
+										sunt, iste exercitationem minima praesentium culpa officia?
+									</div>
+								</a>
+								<a href="#" class="button _fw specialists-item-front__button">
+									Записаться
+								</a>
+
 							</div>
 
 							<!-- Слайд -->
-							<div class="product-card__slide swiper-slide">
-								<div class="product-card">
-									<div class="product-card-wrapper product-card__wrapper">
-										<div class="product-image-wrapper product-card__image-wrapper">
-											<div class="product-image product-card__image">
-												<img src="@img/specialists/01.png" alt="">
-											</div>
-										</div>
-										<div class="product-content-wprapper product-card__content-wrapper">
-											<div class="product-content product-card__content">
-												<h3 class="product-card__title">Татьяна Данилова</h3>
-												<p class="product-card__position">Психолог</p>
-												<p class="product-card__sub-title">Получите готовые медитации,
-													направленные на то, чтобы восстановить внутреннее равновесие, найти
-													ответы на ваши вопросы,
-													войти
-													в ресурсное состояние и наполниться энергией.
-												</p>
-												<button class="button product-card__button">В корзину</button>
-											</div>
-										</div>
+							<div class="specialists__slide swiper-slide specialists-item-front">
+								<a href="#" class="specialists-item-front__body">
+									<div class="specialists-item-front__image-ibg">
+										<img data-src="@img/specialists/01.jpg" alt="">
 									</div>
-								</div>
+
+									<div class="specialists-item-front__title">
+										Имя Фамилия
+									</div>
+									<div class="specialists-item-front__sub-title">
+										Психолог
+									</div>
+									<div class="specialists-item-front__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
+										sunt, iste exercitationem minima praesentium culpa officia?
+									</div>
+								</a>
+								<a href="#" class="button _fw specialists-item-front__button">
+									Записаться
+								</a>
+
 							</div>
 
 							<!-- Слайд -->
-							<div class="product-card__slide swiper-slide">
-								<div class="product-card">
-									<div class="product-card-wrapper product-card__wrapper">
-										<div class="product-image-wrapper product-card__image-wrapper">
-											<div class="product-image product-card__image">
-												<img src="@img/specialists/01.png" alt="">
-											</div>
-										</div>
-										<div class="product-content-wprapper product-card__content-wrapper">
-											<div class="product-content product-card__content">
-												<h3 class="product-card__title">Татьяна Данилова</h3>
-												<p class="product-card__position">Психолог</p>
-												<p class="product-card__sub-title">Получите готовые медитации,
-													направленные на то, чтобы восстановить внутреннее равновесие, найти
-													ответы на ваши вопросы,
-													войти
-													в ресурсное состояние и наполниться энергией.
-												</p>
-												<button class="button product-card__button">В корзину</button>
-											</div>
-										</div>
+							<div class="specialists__slide swiper-slide specialists-item-front">
+								<a href="#" class="specialists-item-front__body">
+									<div class="specialists-item-front__image-ibg">
+										<img data-src="@img/specialists/01.jpg" alt="">
 									</div>
-								</div>
+
+									<div class="specialists-item-front__title">
+										Имя Фамилия
+									</div>
+									<div class="specialists-item-front__sub-title">
+										Психолог
+									</div>
+									<div class="specialists-item-front__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
+										sunt, iste exercitationem minima praesentium culpa officia?
+									</div>
+								</a>
+								<a href="#" class="button _fw specialists-item-front__button">
+									Записаться
+								</a>
 							</div>
 
 							<!-- Слайд -->
-							<div class="product-card__slide swiper-slide">
-								<div class="product-card">
-									<div class="product-card-wrapper product-card__wrapper">
-										<div class="product-image-wrapper product-card__image-wrapper">
-											<div class="product-image product-card__image">
-												<img src="@img/specialists/01.png" alt="">
-											</div>
-										</div>
-										<div class="product-content-wprapper product-card__content-wrapper">
-											<div class="product-content product-card__content">
-												<h3 class="product-card__title">Татьяна Данилова</h3>
-												<p class="product-card__position">Психолог</p>
-												<p class="product-card__sub-title">Получите готовые медитации,
-													направленные на то, чтобы восстановить внутреннее равновесие, найти
-													ответы на ваши вопросы,
-													войти
-													в ресурсное состояние и наполниться энергией.
-												</p>
-												<button class="button product-card__button">В корзину</button>
-											</div>
-										</div>
+							<div class="specialists__slide swiper-slide specialists-item-front">
+								<a href="#" class="specialists-item-front__body">
+									<div class="specialists-item-front__image-ibg">
+										<img data-src="@img/specialists/01.jpg" alt="">
 									</div>
-								</div>
+
+									<div class="specialists-item-front__title">
+										Имя Фамилия
+									</div>
+									<div class="specialists-item-front__sub-title">
+										Психолог
+									</div>
+									<div class="specialists-item-front__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
+										sunt, iste exercitationem minima praesentium culpa officia?
+									</div>
+								</a>
+								<a href="#" class="button _fw specialists-item-front__button">
+									Записаться
+								</a>
 							</div>
 
 							<!-- Слайд -->
-							<div class="product-card__slide swiper-slide">
-								<div class="product-card">
-									<div class="product-card-wrapper product-card__wrapper">
-										<div class="product-image-wrapper product-card__image-wrapper">
-											<div class="product-image product-card__image">
-												<img src="@img/specialists/01.png" alt="">
-											</div>
-										</div>
-										<div class="product-content-wprapper product-card__content-wrapper">
-											<div class="product-content product-card__content">
-												<h3 class="product-card__title">Татьяна Данилова</h3>
-												<p class="product-card__position">Психолог</p>
-												<p class="product-card__sub-title">Получите готовые медитации,
-													направленные на то, чтобы восстановить внутреннее равновесие, найти
-													ответы на ваши вопросы,
-													войти
-													в ресурсное состояние и наполниться энергией.
-												</p>
-												<button class="button product-card__button">В корзину</button>
-											</div>
-										</div>
+							<div class="specialists__slide swiper-slide specialists-item-front">
+								<a href="#" class="specialists-item-front__body">
+									<div class="specialists-item-front__image-ibg">
+										<img data-src="@img/specialists/01.jpg" alt="">
 									</div>
-								</div>
+
+									<div class="specialists-item-front__title">
+										Имя Фамилия
+									</div>
+									<div class="specialists-item-front__sub-title">
+										Психолог
+									</div>
+									<div class="specialists-item-front__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
+										sunt, iste exercitationem minima praesentium culpa officia?
+									</div>
+								</a>
+								<a href="#" class="button _fw specialists-item-front__button">
+									Записаться
+								</a>
+
+							</div>
+
+							<!-- Слайд -->
+							<div class="specialists__slide swiper-slide specialists-item-front">
+								<a href="#" class="specialists-item-front__body">
+									<div class="specialists-item-front__image-ibg">
+										<img data-src="@img/specialists/01.jpg" alt="">
+									</div>
+
+									<div class="specialists-item-front__title">
+										Имя Фамилия
+									</div>
+									<div class="specialists-item-front__sub-title">
+										Психолог
+									</div>
+									<div class="specialists-item-front__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
+										sunt, iste exercitationem minima praesentium culpa officia?
+									</div>
+								</a>
+								<a href="#" class="button _fw specialists-item-front__button">
+									Записаться
+								</a>
+
+							</div>
+
+							<!-- Слайд -->
+							<div class="specialists__slide swiper-slide specialists-item-front">
+								<a href="#" class="specialists-item-front__body">
+									<div class="specialists-item-front__image-ibg">
+										<img data-src="@img/specialists/01.jpg" alt="">
+									</div>
+
+									<div class="specialists-item-front__title">
+										Имя Фамилия
+									</div>
+									<div class="specialists-item-front__sub-title">
+										Психолог
+									</div>
+									<div class="specialists-item-front__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci in
+										voluptatibus animi odio pariatur quo id ea dolore quam aut mollitia quibusdam,
+										sunt, iste exercitationem minima praesentium culpa officia?
+									</div>
+								</a>
+								<a href="#" class="button _fw specialists-item-front__button">
+									Записаться
+								</a>
 							</div>
 						</div>
-						<!-- Если нужна пагинация -->
-						<div class="swiper-pagination"></div>
-						<!-- Если нужен скролбар -->
-						<div class="swiper-scrollbar"></div>
 					</div>
-
 				</div>
 			</section>
 
@@ -255,7 +291,7 @@
 												<div class="product-content product-card__content">
 													<h3 class="product-card__label">Название товара</h3>
 													<div class="product-card__price">1750 Р</div>
-													<button class="button product-card__button">В корзину</button>
+													<button class="button product-card__button">записаться</button>
 												</div>
 											</div>
 										</div>
@@ -275,7 +311,7 @@
 												<div class="product-content product-card__content">
 													<h3 class="product-card__label">Название товара</h3>
 													<div class="product-card__price">1750 Р</div>
-													<button class="button product-card__button">В корзину</button>
+													<button class="button product-card__button">записаться</button>
 												</div>
 											</div>
 										</div>
@@ -295,7 +331,7 @@
 												<div class="product-content product-card__content">
 													<h3 class="product-card__label">Название товара</h3>
 													<div class="product-card__price">1750 Р</div>
-													<button class="button product-card__button">В корзину</button>
+													<button class="button product-card__button">записаться</button>
 												</div>
 											</div>
 										</div>
@@ -315,7 +351,7 @@
 												<div class="product-content product-card__content">
 													<h3 class="product-card__label">Название товара</h3>
 													<div class="product-card__price">1750 Р</div>
-													<button class="button product-card__button">В корзину</button>
+													<button class="button product-card__button">записаться</button>
 												</div>
 											</div>
 										</div>
@@ -335,26 +371,17 @@
 												<div class="product-content product-card__content">
 													<h3 class="product-card__label">Название товара</h3>
 													<div class="product-card__price">1750 Р</div>
-													<button class="button product-card__button">В корзину</button>
+													<button class="button product-card__button">записаться</button>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-
 							</div>
-							<!-- Если нужна пагинация -->
-							<div class="swiper-pagination"></div>
-
-							<!-- Если нужен скролбар -->
-							<div class="swiper-scrollbar"></div>
 						</div>
-
 					</div>
-
 				</div>
 			</section>
-
 
 			<section class="socials">
 				<div class="socials__container">
@@ -392,12 +419,10 @@
 									</a>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</section>
-
 
 		</main>
 		@@include('html/_footer.htm',{})

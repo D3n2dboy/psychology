@@ -3,10 +3,10 @@
 @import "base/forms/forms";
 
 // Стили попапов
-// @import "base/popup";
+@import "base/popup";
 
 // Стили спойлеров
-// @import "base/spollers";
+@import "base/spollers";
 
 // Стили табов
 // @import "base/tabs";
@@ -85,7 +85,7 @@
 	iframe,
 	object,
 	embed {
-		position: fixed;
+		position: absolute;
 		top: 50%;
 		left: 50%;
 		min-width: 100%;

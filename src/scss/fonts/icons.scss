@@ -15,12 +15,51 @@
 	}
 }
 
-._icon-arrow-down:before {
+._icon-arrow-left:before {
 	content: "\e900";
 }
-._icon-arrow-left:before {
+._icon-arrow-right:before {
 	content: "\e901";
 }
-._icon-arrow-right:before {
+._icon-bell:before {
 	content: "\e902";
+}
+._icon-call:before {
+	content: "\e903";
+}
+._icon-cart:before {
+	content: "\e904";
+}
+._icon-close-handler:before {
+	content: "\e905";
+}
+._icon-copy:before {
+	content: "\e906";
+}
+._icon-email:before {
+	content: "\e907";
+}
+._icon-filter:before {
+	content: "\e908";
+}
+._icon-info:before {
+	content: "\e909";
+}
+._icon-like:before {
+	content: "\e90a";
+}
+._icon-man:before {
+	content: "\e90b";
+}
+._icon-phone:before {
+	content: "\e90c";
+}
+._icon-smi-2:before {
+	content: "\e90d";
+}
+._icon-star:before {
+	content: "\e90e";
+}
+._icon-user:before {
+	content: "\e90f";
 }

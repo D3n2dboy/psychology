@@ -1,10 +1,51 @@
-<!-- <div id="popup" aria-hidden="true" class="popup">
+<div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__close-wrapper">
+				<button data-close type="button" class="popup__close"></button>
+			</div>
 			<div class="popup__text">
-				Text
+				<form class="form form__popup" action="">
+
+					<div class="form__row form__item_two">
+						<label class="form__label" for="">
+							<div class="form__label-text">Ваше имя:</div>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input">
+							</div>
+						</label>
+
+						<label class="form__label" for="">
+							<div class="form__label-text">Ваш номер телефона:</div>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input">
+							</div>
+						</label>
+					</div>
+
+					<div class="form__row form__item_one">
+						<label class="form__label" for="">
+							<div class="form__label-text">Ваше сообщение:</div>
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder=""
+									class="input form__input">
+							</div>
+						</label>
+					</div>
+					<div class="form__row form__item_one">
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+								name="form[]">
+							<label for="c_1" class="checkbox__label"><span class="checkbox__text">Согласен на обработку
+									персональных данных</span></label>
+						</div>
+					</div>
+
+					<button class="button">Отправить</button>
+				</form>
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>

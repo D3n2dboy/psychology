@@ -1,19 +1,84 @@
 //<FORM>
 // Снипет (HTML):
+
 .form {
+	// .form__popup
+
+	&__popup {
+	}
+
+	// .form__row
+
 	&__row {
+		display: flex;
+		width: 100%;
+		gap: rem(30);
+
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
 	}
-	&__column {
+
+	// .form__item
+
+	&__item {
+		// .form__item_two
+
+		&_two {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+
+			@media (max-width: $tablet) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		// .form__item_one
+
+		&_one {
+		}
 	}
+
+	// .form__label
+
+	&__label {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: rem(5);
+	}
+
+	// .form__label-text
+
+	&__label-text {
+		color: $linkColorHover;
+	}
+
 	&__line {
+		width: 100%;
 	}
+
+	// .form__input
+
 	&__input {
-	}
-	&__button {
-	}
-	&__error {
+		width: 100%;
+		border: 1px solid #ebebeb;
+		border-radius: rem(10);
+		padding: rem(15);
+		transition: border-color 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				border: 1px solid $linkColorHover;
+			}
+		}
 	}
 }
+.input {
+}
+.button {
+}
+
 //</FORM>
 
 // <BUTTONS>
@@ -22,11 +87,11 @@
 
 // <INPUTS>
 // Снипет (HTML): inp
-// @import "input";
+@import "input";
 
 // <CHECK>
 // Снипет (HTML): chk
-// @import "checkbox";
+@import "checkbox";
 
 // <RADIO>
 // Снипет (HTML): opt

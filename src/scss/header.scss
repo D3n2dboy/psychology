@@ -6,7 +6,7 @@
 
 .icon-menu {
 	display: none;
-	@media (max-width: $mobile) {
+	@media (max-width: $tablet) {
 		display: block;
 		position: relative;
 		width: rem(30);
@@ -22,7 +22,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: $accentColor;
 		}
 		&::before {
 			top: 0;
@@ -59,41 +59,89 @@
 	z-index: 50;
 	width: 100%;
 	z-index: 10;
-	background-color: #fff;
+	background-color: #29292946;
+	color: #fff;
 	transition: all 0.5s ease;
+
 	&._header-scroll {
+		top: 0;
+		left: 0;
 		box-shadow: 0 20px 30px 0 rgba(218, 192, 167, 0.5);
 	}
-	// .header__container
 
 	&__container {
+		position: relative;
 		display: flex;
-		width: 100%;
 		min-height: rem(90);
 		align-items: center;
 		gap: rem(25);
+
+		@media (max-width: $tablet) {
+			justify-content: space-between;
+		}
 	}
 
 	// .header__logo
 
 	&__logo {
-		flex: 0 0 rem(150);
+		flex: 0 0 rem(110);
 		padding-right: rem(5);
+		img {
+			max-width: 100%;
+		}
+		@media (max-width: $tablet) {
+			flex: 1 1 100%;
+		}
+
+		@media (max-width: $mobileSmall) {
+			flex: 0 0 60px;
+		}
 	}
 
 	// .header__extra
 
 	&__extra {
-		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: rem(15);
+		//flex-wrap: wrap;
+
+		@media (min-width: $tablet) {
+			width: 100%;
+		}
 	}
 
 	// .header__menu
 
 	&__menu {
-		flex: 1 0 auto;
+		flex: 1 1 100%;
+		transition: left 0.3s ease;
+		@media (max-width: $tablet) {
+			position: fixed;
+			top: rem(90);
+			left: -100%;
+			width: 80%;
+			height: 100%;
+			min-height: 100%;
+			padding: rem(15);
+			color: #000;
+			background-color: #fff;
+			overflow: auto;
+
+			.menu-open & {
+				left: 0;
+				width: 80%;
+				min-height: 100%;
+			}
+		}
+
+		@media (max-width: $mobile) {
+			.menu-open & {
+				left: 0;
+				width: 100%;
+			}
+		}
 	}
 
 	// .header__actions
@@ -101,6 +149,8 @@
 	&__actions {
 		display: flex;
 		gap: rem(15);
+		flex: 0 0 auto;
+		align-items: center;
 	}
 
 	// .header__socials
@@ -117,6 +167,10 @@
 	// .menu__body
 
 	&__body {
+		@media (max-width: $tablet) {
+			padding-top: rem(20);
+			padding-bottom: rem(100);
+		}
 	}
 
 	// .menu__list
@@ -124,12 +178,38 @@
 	&__list {
 		display: flex;
 		column-gap: rem(30);
+		row-gap: rem(10);
+		flex-wrap: wrap;
+		@media (max-width: $pc) {
+			column-gap: rem(20);
+		}
+
+		@media (max-width: 1024px) {
+			column-gap: rem(15);
+		}
+
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			gap: rem(0);
+		}
 	}
 
 	// .menu__item
 
 	&__item {
 		font-size: rem(20);
+		@include adaptiveValue("font-size", 20, 15);
+
+		@media (max-width: $tablet) {
+			font-size: rem(35);
+			padding-left: rem(5);
+			padding-bottom: rem(15);
+			margin-bottom: rem(15);
+
+			&:not(:last-child) {
+				border-bottom: 1px solid #ebebeb;
+			}
+		}
 	}
 
 	// .menu__link
@@ -147,6 +227,15 @@
 	display: flex;
 	align-self: center;
 	gap: rem(15);
+
+	@media (max-width: $pc) {
+		gap: rem(10);
+	}
+
+	@media (max-width: 1224px) {
+		display: none;
+	}
+
 	// .socials-link__item
 
 	&__item {
@@ -174,4 +263,25 @@
 .button {
 }
 .header-callback {
+	display: inline-flex;
+	gap: rem(5);
+	@media (max-width: $pc) {
+		padding: rem(15) rem(10);
+	}
+
+	@media (max-width: 1224px) {
+		padding: rem(5) rem(10);
+		flex-direction: column;
+	}
+
+	@media (max-width: $tablet) {
+		flex-direction: row;
+		padding: rem(15) rem(10);
+	}
+
+	@media (max-width: $mobileSmall) {
+		font-size: rem(12);
+		padding: rem(12) rem(5);
+		flex-direction: column;
+	}
 }

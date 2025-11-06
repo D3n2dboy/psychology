@@ -14,6 +14,48 @@ body::after {
 .popup-show body::after {
 	opacity: 1;
 }
+
+.popup__close-wrapper {
+	position: absolute;
+	top: rem(-10);
+	right: rem(-10);
+	display: inline-block;
+	padding: 5px 5px 2px 5px;
+	border-radius: 50%;
+	border: 2px solid $linkColorHover;
+	background-color: #fff;
+}
+
+.popup__close {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+
+	&::before,
+	&::after {
+		content: "";
+		transition: all 0.3s ease 0s;
+		right: 0;
+		position: absolute;
+		width: 100%;
+		height: rem(2);
+		background-color: $linkColorHover;
+	}
+
+	&::before {
+		content: "";
+		top: calc(50% - rem(1));
+		transform: rotate(-45deg);
+		color: red;
+	}
+	&::after {
+		content: "";
+		bottom: calc(50% - rem(1));
+		transform: rotate(45deg);
+	}
+}
+
 .popup {
 	position: fixed;
 	top: 0;
@@ -50,8 +92,8 @@ body::after {
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: 20px;
+	background-color: #fff;
+	padding: rem(50) rem(30);
 	width: 100%;
 	max-width: 900px;
 	border-radius: 20px;

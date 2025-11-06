@@ -2,6 +2,10 @@
 .footer {
 	background-color: #fff;
 	padding: rem(80) 0 rem(20) 0;
+
+	@media (max-width: $mobile) {
+		//padding-top: rem(30);
+	}
 	// .footer__container
 
 	&__container {
@@ -15,18 +19,39 @@
 	&__body {
 		display: flex;
 		gap: rem(40);
+
+		@media (max-width: $pc) {
+			gap: rem(30);
+		}
+
+		@media (max-width: $tablet) {
+			gap: rem(20);
+		}
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			align-items: center;
+			row-gap: rem(40);
+			text-align: center;
+		}
 	}
 
 	// .footer__logo
 
 	&__logo {
-		flex: 0 0 rem(150);
+		@media (min-width: $mobile) {
+			flex: 0 0 rem(120);
+		}
 	}
 
 	// .footer__nav
 
 	&__nav {
 		flex: 1 0 45%;
+
+		@media (max-width: $tablet) {
+			flex: 1 0 38%;
+		}
 
 		li {
 			a {
@@ -45,7 +70,7 @@
 	&__title {
 		font-size: rem(30);
 		&:not(:last-child) {
-			margin-bottom: rem(15);
+			margin-bottom: rem(25);
 		}
 	}
 
@@ -58,8 +83,18 @@
 
 	&__items {
 		display: flex;
+		flex-wrap: wrap;
 		font-size: rem(22);
-		gap: rem(35);
+		column-gap: rem(35);
+		row-gap: rem(10);
+
+		@media (max-width: $tablet) {
+			column-gap: rem(25);
+		}
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
 	}
 
 	// .footer__contacts
@@ -70,7 +105,7 @@
 	// .footer__phone
 
 	&__phone {
-		display: inline-block;
+		display: block;
 		font-size: rem(32);
 		&:not(:last-child) {
 			margin-bottom: rem(5);
@@ -90,6 +125,10 @@
 	&__socials {
 		display: flex;
 		gap: rem(15);
+
+		@media (max-width: $mobile) {
+			justify-content: center;
+		}
 	}
 
 	// .footer__copy
